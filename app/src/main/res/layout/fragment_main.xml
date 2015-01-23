@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1"
+        android:hint="@string/relative"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adjective1"
+        android:hint="@string/adjective"
+        android:layout_below="@+id/relative1"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adjective2"
+        android:hint="@string/adjective"
+        android:layout_below="@+id/adjective1"
+        android:layout_alignLeft="@+id/adjective1"
+        android:layout_alignStart="@+id/adjective1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_of_person"
+        android:hint="@string/name_of_person_in_room"
+        android:layout_below="@+id/adjective2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adjective3"
+        android:hint="@string/adjective"
+        android:layout_below="@+id/name_of_person"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verb_ed"
+        android:layout_below="@+id/adjective3"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/veb_ending_in_ed" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/body_part"
+        android:layout_below="@+id/verb_ed"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/body_part" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verb_ing"
+        android:layout_below="@+id/body_part"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/verb_ending_in_ing" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative2"
+        android:layout_below="@+id/verb_ing"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/relative" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@+id/relative2"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/name" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_me"
+        android:id="@+id/show_me"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"/>
+
+</RelativeLayout>
